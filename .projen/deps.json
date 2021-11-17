@@ -5,8 +5,16 @@
       "type": "build"
     },
     {
+      "name": "@types/jsonwebtoken",
+      "type": "build"
+    },
+    {
       "name": "@types/node",
       "version": "^14.17.0",
+      "type": "build"
+    },
+    {
+      "name": "@types/pem-jwk",
       "type": "build"
     },
     {
@@ -79,6 +87,11 @@
       "type": "runtime"
     },
     {
+      "name": "@aws-cdk/aws-iam",
+      "version": "^1.95.2",
+      "type": "runtime"
+    },
+    {
       "name": "@aws-cdk/aws-lambda-nodejs",
       "version": "^1.95.2",
       "type": "runtime"
@@ -89,11 +102,27 @@
       "type": "runtime"
     },
     {
+      "name": "@aws-sdk/client-ssm",
+      "type": "runtime"
+    },
+    {
       "name": "@softchef/cdk-restapi",
       "type": "runtime"
     },
     {
       "name": "esbuild",
+      "type": "runtime"
+    },
+    {
+      "name": "jsonwebtoken",
+      "type": "runtime"
+    },
+    {
+      "name": "jwt-decode",
+      "type": "runtime"
+    },
+    {
+      "name": "pem-jwk",
       "type": "runtime"
     }
   ],
