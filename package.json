@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
+    "@types/jsonwebtoken": "^8.5.6",
     "@types/node": "^14.17.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
@@ -43,8 +44,10 @@
     "@aws-cdk/assert": "^1.95.2",
     "@aws-cdk/aws-lambda-nodejs": "^1.95.2",
     "@aws-cdk/core": "^1.95.2",
+    "@aws-sdk/client-ssm": "^3.41.0",
     "@softchef/cdk-restapi": "^0.1.119",
-    "esbuild": "^0.13.14"
+    "esbuild": "^0.13.14",
+    "jsonwebtoken": "^8.5.1"
   },
   "bundledDependencies": [],
   "license": "Apache-2.0",
