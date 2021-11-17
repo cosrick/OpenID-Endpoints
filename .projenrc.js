@@ -6,6 +6,7 @@ const project = new AwsCdkTypeScriptApp({
 
   cdkDependencies: [
     '@aws-cdk/aws-lambda-nodejs',
+    '@aws-cdk/aws-iam',
   ], /* Which AWS CDK modules (those that start with "@aws-cdk/") this app uses. */
   deps: [
     '@softchef/cdk-restapi',
@@ -13,10 +14,12 @@ const project = new AwsCdkTypeScriptApp({
     'jsonwebtoken',
     '@aws-sdk/client-ssm',
     'jwt-decode',
+    'pem-jwk',
   ], /* Runtime dependencies of this module. */
   // description: undefined,      /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
     '@types/jsonwebtoken',
+    '@types/pem-jwk',
   ], /* Build dependencies for this module. */
   // packageName: undefined,      /* The "name" in package.json. */
   // release: undefined,          /* Add release management to this project. */
