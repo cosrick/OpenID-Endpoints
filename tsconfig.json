@@ -9,7 +9,8 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "lib": [
-      "es2019"
+      "ES2020",
+      "DOM"
     ],
     "module": "CommonJS",
     "noEmitOnError": false,
@@ -17,7 +18,7 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "resolveJsonModule": true,
     "strict": true,
@@ -27,7 +28,8 @@
     "target": "ES2019"
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "lambda-assets/**/*.ts"
   ],
   "exclude": [
     "cdk.out"

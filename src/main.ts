@@ -1,10 +1,17 @@
+import path from 'path';
 import { App, Construct, Stack, StackProps } from '@aws-cdk/core';
+import { RestApi, HttpMethod } from '@softchef/cdk-restapi';
 
+const LAMBDA_ASSETS_PATH = path.resolve( __dirname, './lambda-assets' );
 export class MyStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps = {}) {
     super(scope, id, props);
 
     // define resources here...
+    new RestApi(this, 'TwitterOpenIdApi', {
+      resources: [],
+      enableCors: true,
+    });
   }
 }
 
