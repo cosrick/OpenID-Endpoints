@@ -4,11 +4,29 @@ const project = new AwsCdkTypeScriptApp({
   defaultReleaseBranch: 'main',
   name: 'openid',
 
-  // cdkDependencies: undefined,  /* Which AWS CDK modules (those that start with "@aws-cdk/") this app uses. */
-  // deps: [],                    /* Runtime dependencies of this module. */
+  cdkDependencies: [
+    '@aws-cdk/aws-lambda-nodejs',
+  ], /* Which AWS CDK modules (those that start with "@aws-cdk/") this app uses. */
+  deps: [
+    '@softchef/cdk-restapi',
+    'esbuild',
+  ], /* Runtime dependencies of this module. */
   // description: undefined,      /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],                 /* Build dependencies for this module. */
   // packageName: undefined,      /* The "name" in package.json. */
   // release: undefined,          /* Add release management to this project. */
+  tsconfig: {
+    compilerOptions: {
+      lib: [
+        'ES2020',
+        'DOM',
+      ],
+      noUnusedLocals: false,
+    },
+    include: [
+      'lambda-assets/**/*.ts',
+    ],
+  },
+  buildWorkflow: false,
 });
 project.synth();
