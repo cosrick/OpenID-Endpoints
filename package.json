@@ -48,9 +48,11 @@
     "@aws-cdk/core": "^1.95.2",
     "@aws-sdk/client-ssm": "^3.41.0",
     "@softchef/cdk-restapi": "^0.1.119",
+    "axios": "^0.24.0",
     "esbuild": "^0.13.14",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^3.1.2",
+    "oauth-1.0a": "^2.2.6",
     "pem-jwk": "^2.0.0"
   },
   "bundledDependencies": [],

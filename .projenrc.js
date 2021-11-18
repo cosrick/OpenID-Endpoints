@@ -15,6 +15,8 @@ const project = new AwsCdkTypeScriptApp({
     '@aws-sdk/client-ssm',
     'jwt-decode',
     'pem-jwk',
+    'axios',
+    'oauth-1.0a',
   ], /* Runtime dependencies of this module. */
   // description: undefined,      /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: [
