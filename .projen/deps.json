@@ -110,6 +110,10 @@
       "type": "runtime"
     },
     {
+      "name": "axios",
+      "type": "runtime"
+    },
+    {
       "name": "esbuild",
       "type": "runtime"
     },
@@ -119,6 +123,10 @@
     },
     {
       "name": "jwt-decode",
+      "type": "runtime"
+    },
+    {
+      "name": "oauth-1.0a",
       "type": "runtime"
     },
     {
